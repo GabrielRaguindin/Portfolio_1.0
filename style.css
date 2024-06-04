@@ -1,0 +1,419 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, section {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Header Style */
+#nav {
+    display: flex;
+    justify-content: space-around;
+}
+header {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+/* Header Content Style */
+.company_position{ /* Company Name Position */
+    margin-right: 300px;
+    margin-left: 70px;
+}
+.company_name{ /* Company Name Design */
+    font-family: 'Courier New';
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgba(230, 0, 0, 0.7);
+}
+.link_position{ /* Navigation Links Position */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+.section_link{ /* Navigation Links Design */
+    font-family: 'Josefin Sans';
+    padding: 0 1.5rem;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.section_link:hover{
+    opacity: 0.5;
+    color: cyan;
+}
+
+/* Home Section Styles */
+#home_section{ /* Home Section Design */
+    background-image: url(BackgroundImg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('BackgroundImg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.devphoto_position{ /* Developer Photo Position */
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+.dev_photo{ /* Developer Photo Design */
+    border-radius: 100%;
+    height: 380px;
+    width: 380px;
+    box-shadow: rgba(60, 180, 240, 0.4) 5px 5px, 
+    rgba(60, 180, 240, 0.3) 10px 10px, 
+    rgba(60, 180, 240, 0.2) 15px 15px, 
+    rgba(60, 180, 240, 0.1) 20px 20px, 
+    rgba(60, 180, 170, 0.05) 25px 25px;
+}
+
+/* Info Styles */
+.intro_position{ /* Intro Text Position */
+    display: flex;
+    justify-content: left;
+    margin-top: -300px;
+    margin-left: 150px;
+}
+.intro{ /* Intro Text Design */
+    font-family: 'Josefin Sans';
+    font-size: 60px;
+    color: white;
+}
+.info{ /* Info Text Design */
+    font-family: 'Josefin Sans';
+    margin-top: 6px;
+    font-size: 22px;
+    color: white;
+    font-weight: normal;
+}
+.home_button{ /* Home Button Design */
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+    margin-top: 17px;
+    margin-left: 150px;
+    padding: 12px 48px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border-color: white;
+    transition: all 0.3s;
+}
+.home_button:hover{
+    transform: translateY(-3px);
+    opacity: 0.8;
+    border-color: cyan;
+}
+
+/* Project Section Styles */
+#project_section{ /* Project Section Design */
+    background-image: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(50, 100, 150) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.section_title{ /* Section Title Design */
+    font-family: 'Josefin Sans';
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    margin-top: 40px;
+}
+
+/* Image Styles */
+.project { /* Image Position */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project img { /* Image Design */
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 140px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 40px, rgba(0, 0, 0, 0.8) 0px 15px 12px;
+}
+
+/* Textbox Styles */
+.textbox{ /* Upper Text */
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    margin-top: 10px;
+    border: 1px solid; 
+    border-radius: 10px;
+    padding: 10px 30px;
+    border-color:cyan;
+    text-align: center;
+    color: white; 
+}
+.textbox p{ /* Lower Text */
+    font-weight: normal;
+    margin-top: 3px;
+}
+.project_button{ /* Project Buttons Design */
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.3s;
+}
+.project_button:hover{
+    transform: translateY(-3px);
+    opacity: 0.8;
+    color: rgb(20, 20, 20);
+    background-color: cyan;
+}
+
+/* About Section Styles */
+#about_section{ /* About Section Design */
+    background-image: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgba(50, 100, 150) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+.cics_position{ /* College Photo Position */
+    position: absolute;
+    right: 0;
+    margin-top: 120px;
+    margin-right: 170px;
+}
+.cics{ /* College Photo Design */
+    height: 330px;
+    width: 330px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 40px, rgba(0, 0, 0, 0.8) 0px 15px 12px;
+}
+
+/* About Styles */
+.about_position{ /* About Position */
+    position: absolute;
+    left: 0;
+    margin-top: 160px;
+    margin-left: 170px;
+}
+.about{ /* Upper Text */
+    font-family: 'Josefin Sans';
+    font-size: 60px;
+    color: white;
+}
+.details{ /* Lower Text */
+    font-family: 'Josefin Sans';
+    font-size: 22px;
+    color: white;
+    font-weight: normal;
+}
+.college_button{
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+    padding: 12px 48px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border-color: white;
+    transition: all 0.3s;
+}
+.college_button:hover{
+    transform: translateY(-3px);
+    opacity: 0.8;
+    border-color: cyan;
+}
+
+/* Contact Section Styles */
+#contact_section{ /* Contact Section Design */
+    background-image: url(BackgroundImg2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('BackgroundImg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+.form_position { /* Form Position */
+    position: absolute;
+    right: 0;
+    margin-top: 85px;
+    margin-right: 170px;
+}
+.form_background { /* Form Background Design */
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    align-items: center;
+    width: 30vw;
+    height: 68vh;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 40px, rgba(0, 0, 0, 0.8) 0px 15px 12px;
+    background-color: rgba(20, 20, 20, 0.4);
+}
+/* Form Contents Styles */
+.send_msg{
+    font-family: 'Josefin Sans';
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.labels{
+    font-family: 'Josefin Sans';
+    color: white;
+    padding-left: 8px;
+}
+.inputs{
+    display: flex;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 12px 24px;
+    width: 250px;
+    color: white;
+    border-color: #EAEEEA;
+    background-color: #EAEEEA00;
+}
+.contact_button{
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 15px;
+    padding: 12px 48px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border-color: white;
+    width: 100%;
+    transition: all 0.3s;
+}
+.contact_button:hover{
+    transform: translateY(-3px);
+    opacity: 0.8;
+    color: rgb(20, 20, 20);
+    background-color: cyan;
+}
+
+/* Contact Text Styles */
+.collab_position{
+    position: absolute;
+    left: 0;
+    margin-top: 160px;
+    margin-left: 170px;
+}
+.collab_text{
+    font-family: 'Josefin Sans';
+    font-size: 60px;
+    color: white;
+}
+.collab_text p{
+    font-family: 'Josefin Sans';
+    font-size: 22px;
+    color: white;
+    font-weight: normal;
+}
+.contact_me{
+    margin-top: 30px;
+    font-family: 'Josefin Sans';
+    color: white;
+}
+.contact_list{
+    margin-top: 12px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+/* Footer Styles */
+#social_links{ /* Footer Position*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 18px;
+}
+/* Footer Content Sytle */
+.icon{ /* Icon Link Position */
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.sm-icon { /* Icon Link Design */
+    font-size: 23px;
+    margin-top: 25px;
+    padding: 7px 0.7rem;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    transition: all 0.2s; /* Add smooth transitions */
+}
+
+/* Magic Icon Hovers */
+#instagram:hover {
+    background-image: linear-gradient(45deg, rgb(254, 218, 117) 0%, #FF00A7 100%);
+    border-radius: 15px;
+    box-shadow: #FF00A7 0px 1px 12px;
+}
+#whatsapp:hover{
+    background-image: linear-gradient(360deg, #238C7E 0%, #25D366 100%);
+    border-radius: 15px;
+    box-shadow: #25D366 0px 1px 12px;
+}
+#github:hover{
+    background-image: linear-gradient(360deg, black 0%, #24292E 100%);
+    border-radius: 15px;
+    box-shadow: rgb(230, 230, 230) 0px 1px 12px;
+}
+#facebook:hover{
+    background-image: linear-gradient(360deg, rgb(0, 0, 255) 0%, #1877F2 100%);
+    border-radius: 15px;
+    box-shadow: #1D1DFF 0px 1px 12px;
+}
+#youtube:hover{
+    background-image: linear-gradient(360deg, #A00000 0%, #FF0000 100%);
+    border-radius: 15px;
+    box-shadow: #FF0000 0px 1px 12px;
+}
+
+/* Scroll Button style*/
+#scrollButton {
+    font-family: 'Josefin Sans';
+    position: fixed;
+    bottom: 28px;
+    right: 20px;
+    z-index: 1;
+    font-size: 13px;
+    padding: 10px 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: white;
+    transition: all 0.3s;
+}
+#scrollButton:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+    border-color: cyan;
+}

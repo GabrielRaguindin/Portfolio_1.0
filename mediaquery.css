@@ -1,0 +1,181 @@
+/* This is the responsiveness for the dimensions of Oppo A31 Mobile Device
+    Aspect Ratio = 9:20 */
+@media screen and (max-width: 425px) and (max-height: 945px) {
+
+    header {
+        font-size: 18px;
+    }
+    .company_position{ /* Company Name Position */
+        display: none;
+    }
+    .link_position{ /* Navigation Links Position */
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .section_link{ /* Navigation Links Design */
+        padding: 0 1rem;
+    }
+    .devphoto_position{ /* Developer Photo Position */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-left: 150px;
+        padding-top: 40px;
+    }
+    .dev_photo{ /* Developer Photo Design */
+        border-radius: 100%;
+        height: 280px;
+        width: 280px;
+    }
+    .intro_position{ /* Intro Text Position */
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        margin-left: 0;
+        padding-top: 40px;
+    }
+    .intro{ /* Intro Text Design */
+        font-size: 35px;
+        text-align: center;
+        z-index: 1;
+    }
+    .info{ /* Info Text Design */
+        font-size: 20px;
+    }
+    .home_button{ /* Home Button Design */
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        margin-left: 140px;
+        padding: 10px 36px;
+    }
+
+    #project_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .section_title{ /* Section Title Design */
+        display: none;
+    }
+    .project img { /* Image Design */
+        height: 170px;
+        width: 170px;
+        margin-top: 10px;
+    }
+    /* Textbox Styles */
+    .textbox{ /* Upper Text */
+        font-size: 15px;
+        margin-top: 15px;
+        border-radius: 10px;
+        padding: 10px 18px;
+    }
+    .project_button{ /* Project Buttons Design */
+        font-size: 12px;
+        margin-top: 10px;
+        font-weight: bold;
+        padding: 10px 20px;
+    }
+
+    .cics_position{ /* College Photo Position */
+        position: absolute;
+        margin-top: 100px;
+        margin-right: 80px;
+    }
+    .cics{ /* College Photo Design */
+        height: 250px;
+        width: 250px;
+    }
+    /* About Styles */
+    .about_position{ /* About Position */
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 10px;
+    }
+    .about{ /* Upper Text */
+        font-size: 35px;
+        text-align: center;
+    }
+    .details{ /* Lower Text */
+        font-size: 20px;
+    }
+    .college_button{
+        font-size: 20px;
+        padding: 10px 36px;
+        margin-top: 30px;
+    }
+
+    .form_position { /* Form Position */
+        position: absolute;
+        margin-top: 70px;
+        margin-right: 30px;
+    }
+    .form_background { /* Form Background Design */
+        display: flex;
+        flex-direction: column;
+        padding-top: 35px;
+        align-items: center;
+        width: 360px;
+        height: 520px;
+    }
+    /* Form Contents Styles */
+    .send_msg{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .labels{
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    .inputs{
+        font-size: 22px;
+        display: flex;
+        border-radius: 8px;
+        margin-top: 10px;
+        padding: 10px 36px;
+        width: 300px;
+    }
+    .contact_button{
+        font-size: 20px;
+        padding: 15px 36px;
+        margin-top: 25px;
+        width: 100%;
+    }
+    /* Contact Text Styles */
+    .collab_text{
+        display: none;
+    }
+    .collab_text p{
+        display: none;
+    }
+    .contact_me{
+        display: none;
+    }
+
+    #social_links{ /* Footer Position*/
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 18px;
+    }
+    /* Footer Content Sytle */
+    .icon{ /* Icon Link Position */
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    .sm-icon { /* Icon Link Design */
+        font-size: 20px;
+        margin-top: 25px;
+        padding: 5px 0.5rem;
+        
+    }
+
+    #scrollButton{
+        display: none;
+    }
+}
